@@ -1,0 +1,22 @@
+Paso 1
+    Creacion del entorno virtual
+        virtualenv -p python3 env
+
+Paso 2 
+    Activar entorno  (Para esto debes estar en la carpeta 01-django-mysql-api)
+        .\env\Scripts\activate
+
+Paso 3 instalar lo necesario
+    pip install Django==4.0.3
+    pip install mysqlclient
+    pip install pymysql
+
+Paso 4 Crear Proyecto de django, y iniciamos
+    django-admin startproject backend
+    django-admin startapp api
+
+    USKOKUM2010
+
+
+    saariel
+    asd456
