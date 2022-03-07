@@ -1,0 +1,16 @@
+- PASOS
+    virtualenv -p python3 backend
+    .\backend\Scripts\activate
+    pip install Django==4.0.3
+    django-admin startproject src
+    django-admin startapp Task
+    pip install mysqlclient
+    pip install pymysql
+
+    // Ejecutar migraciones
+    python manage.py migrate
+    python manage.py makemigrations task
+
+
+    //
+    
