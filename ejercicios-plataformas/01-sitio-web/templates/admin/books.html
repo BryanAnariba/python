@@ -1,0 +1,70 @@
+{% include 'admin/header.html' %}
+    <div class="row">
+        <div class="col-lg-4 col-md-6 col-sm-12">
+            <div class="card" style="width: 18rem;">
+                <div class="card-header text-white text-center bg-dark">
+                    <h3>Books Registration</h3>
+                </div>
+                <div class="card-body">
+                    <form action="/admin/books/save" method="post" enctype="multipart/form-data">
+                        <div class="form-group mb-2">
+                            <label for="bookName">Book Name: </label>
+                            <input type="text" class="form-control" id="bookName" aria-describedby="bookName" name="bookName" placeholder="Enter Book Name">
+                        </div>
+                        <div class="form-group mb-2">
+                            <label for="bookImage">Book Image: </label>
+                            <input type="file" class="form-control" id="bookImage" name="bookImage" aria-describedby="bookName" placeholder="Enter Book Image">
+                        </div>
+                        <div class="form-group mb-2">
+                            <label for="bookUrl">Book URL: </label>
+                            <input type="text" class="form-control" id="bookUrl" name="bookUrl" aria-describedby="bookName" placeholder="Enter Book Download URL">
+                        </div>
+                        <div class="form-group mb-2">
+                            <button type="submit" class="btn btn-primary btn-rounded-circle mx-auto">
+                                Add Book
+                            </button>
+                        </div>
+                    </form>
+                </div>
+                <div class="card-footer bg-primary">
+
+                </div>
+            </div>
+        </div>
+        <div class="col-lg-8 col-md-6 col-sm-12">
+            <table class="table table-bordered table-hover table-dark">
+                <thead>
+                    <tr>
+                        <th>Id</th>
+                        <th>Book Name</th>
+                        <th>Book Image</th>
+                        <th>Book Url</th>
+                        <th>Book Actions</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    {%
+                        for book in data    
+                    %}
+                    <tr>
+                        <td>{{ book[0] }}</td>
+                        <td>{{ book[1] }}</td>
+                        <td>{{ book[2] }}</td>
+                        <td>{{ book[3] }}</td>
+                        <td>
+                            <form action="/admin/books/delete" method="post">   
+                                <input type="hidden" id="bookId" name="bookId" value="{{ book[0] }}">
+                                <button class="btn btn-outline-danger">
+                                    Delete
+                                </button>
+                            </form>
+                        </td>
+                    </tr>
+                    {%
+                        endfor
+                    %}
+                </tbody>
+            </table>
+        </div>
+    </div>
+{% include 'admin/footer.html' %}
