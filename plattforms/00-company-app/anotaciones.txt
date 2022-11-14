@@ -1,0 +1,57 @@
+CREAR ENTORNO VIRTUAL Y ACTIVAR
+    python -m venv env
+    .\env\Scripts\activate
+
+INSTALAR DJANGO
+    pip install Django==4.1.3
+    pip install mysqlclient pymysql
+
+VERIFICAR PAQUETES INSTALADO
+    pip list
+
+CREAMOS PROYECTO Django
+    django-admin startproject proyecto_api
+    cd proyecto_api
+
+CREAMOS PROYECTO
+    django-admin startapp api
+
+COPIAR TODOS LOS MODULOES CREADOS CON STARTAPP EN settings.py 
+    INSTALLED_APPS = [
+        'django.contrib.admin',
+        'django.contrib.auth',
+        'django.contrib.contenttypes',
+        'django.contrib.sessions',
+        'django.contrib.messages',
+        'django.contrib.staticfiles',
+        'api'
+    ]
+    Y TAMBIEN
+    DATABASES = {
+        'default': {
+            'ENGINE': 'django.db.backends.mysql',
+            'HOST': 'localhost',
+            'PORT': 3306,
+            'USER': 'root',
+            'PASSWORD': '',
+            'NAME': 'CompanyDB',
+            'OPTIONS': {
+                'init_command': "SET SQL_MODE='STRICT_TRANS_TABLES'"
+            }
+        }
+    }
+
+EJECUTAR MIGRACIONES
+    python manage.py migrate
+    ESTO SOLO ES NECESARIO UNA VEZ: ES PARA EL PANEL DE ADMINISTRACION DE DJANGO
+        python manage.py createsuperuser
+            bsanchez
+            saariel115@gmail.com 
+            asd.456
+
+AL CREAR NUEVOS MODELOS DEBES EJECUTAR ESTO POR QUE SON TABLAS QUE HAY QUE REGISTRAR EN MYSQL
+    python manage.py makemigrations
+    python manage.py migrate
+
+EJECUTAR APLICACION
+    python manage.py runserver

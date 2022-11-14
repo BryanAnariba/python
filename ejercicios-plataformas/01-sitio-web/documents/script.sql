@@ -1,1 +1,0 @@
-CREATE TABLE `bookdev`.`book` (`id` INT NOT NULL AUTO_INCREMENT , `bookName` VARCHAR(100) NOT NULL , `bookImage` TEXT NOT NULL , `bookUrl` VARCHAR(255) NOT NULL , PRIMARY KEY (`id`)) ENGINE = InnoDB;
