@@ -1,3 +1,1 @@
-const crear = () => {
-    console.log('ver minuto desde: 04:40');
-}
+// 6:00

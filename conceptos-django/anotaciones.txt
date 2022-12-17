@@ -1,0 +1,9 @@
+Esta carpeta contiene ejemplos de uso con el Framework Django, la idea es usar Django Rest Frameworks
+
+SE DEBEN CREAR LOS PROYECTOS CON VIRTUALENV O BUENO ES EL ESTANDAR
+    1 - CREAR CARPETA SI QUIERES
+    2 - pip install virtualenv O python -m venv venv
+    3 - ACTIVAMOS ENTORNO VIRTUAL: .\venv\Scripts\activate
+    4 - DENTRO DEL ENTORNO VIRTUAL INSTALAR DJANGO: pip install django => django-admin --version
+    5 - CREAR PROYECTO DJANGO: django-admin startproject mysite .
+    6 - EJECUTAR SERVER: python manage.py runserver 3500 -> 3500 es x puerto puedes escribir el que te convenga si no por default es 8000
