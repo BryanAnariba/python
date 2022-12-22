@@ -7,3 +7,15 @@ SE DEBEN CREAR LOS PROYECTOS CON VIRTUALENV O BUENO ES EL ESTANDAR
     4 - DENTRO DEL ENTORNO VIRTUAL INSTALAR DJANGO: pip install django => django-admin --version
     5 - CREAR PROYECTO DJANGO: django-admin startproject mysite .
     6 - EJECUTAR SERVER: python manage.py runserver 3500 -> 3500 es x puerto puedes escribir el que te convenga si no por default es 8000
+    7 - CREAR APP O MODULO: python manage.py startapp nombreapp
+
+MIGRACIONES BASE DE DATOS:
+	PARA EJECUTARLO
+		python manage.py makemigrations
+		python manage.py migrate
+
+CREAR UN SUPERUSUARIO PARA ENTRAR AL PANEL DJANGO => http://127.0.0.1:8000/admin/login/?next=/admin/
+	python manage.py createsuperuser
+		POR AHORA CREE A
+			USER => bsanchez
+			PASS => admin

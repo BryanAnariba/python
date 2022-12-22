@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tasks</title>
+</head>
+<body>
+    <h1>Tasks:</h1>
+    {% for task in data.tasks %}
+        <p>
+            <i>
+                <b>
+                    {% if task.done == False %}
+                        Pending
+                    {% else %}
+                        Done
+                    {% endif %}
+                </b>: 
+                    {{ task.title }} - {{ task.description }} - 
+                    <b>
+                        {{ task.project }}
+                    </b>
+                <hr>
+                <button>&#8998;</button>
+                <button>&#10003;</button>
+            </i>
+        </p>
+    {% endfor %}
+</body>
+</html>
