@@ -1,0 +1,11 @@
+{% extends '../views/header.html' %}
+{% block content %}
+    <h1>Projects:</h1>
+    {% for project in data.projects %}
+        <p>
+            <i>
+                {{ project.name }}
+            </i>
+        </p>
+    {% endfor %}
+{% endblock %}
