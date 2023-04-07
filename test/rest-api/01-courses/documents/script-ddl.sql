@@ -1,1 +1,0 @@
-CREATE TABLE `coursedev`.`course` (`Code` CHAR(6) NOT NULL , `Name` VARCHAR(255) NOT NULL , `Credits` INT NOT NULL ) ENGINE = InnoDB;

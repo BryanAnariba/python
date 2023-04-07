@@ -1,7 +1,0 @@
--- Instalar es como npm en node js
-    py -m pip install virtual env
-
--- Creacion de la carpeta python_modules similar a node_modules
-    py -m virtualenv python_modules
-
--- IR A SCRIPS y ejecutar como administrador el activate.bat

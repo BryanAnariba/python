@@ -1,9 +1,0 @@
-todo lo web va a aqui
-
-Tabla Customers, TestDev
-CustomerId
-FirstName varchar(80)
-LastName varchar(80)
-email varchar(80)
-phone varchar(20)
-address varchar(255)

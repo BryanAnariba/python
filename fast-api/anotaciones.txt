@@ -1,2 +1,0 @@
-Levantar Servidor
-    uvicorn main:app --reload
