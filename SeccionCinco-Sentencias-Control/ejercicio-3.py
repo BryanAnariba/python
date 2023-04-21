@@ -25,5 +25,6 @@ elif 6 <= calificacionEstudiante < 7:
     nota = 'D'
 elif 0 <= calificacionEstudiante < 6:
     nota = 'F'
-
+else:
+    nota = 'Calificacion incorrecta'
 print( f'Calificacion: { calificacionEstudiante } - Nota: { nota }' )
