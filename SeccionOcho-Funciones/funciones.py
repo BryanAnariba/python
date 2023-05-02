@@ -23,3 +23,21 @@ def multiplicaColeccionNumeros( *numeros ) -> str:
             multiplicacion = multiplicacion * numero
     return f'La Multiplicacion de los numeros { numeros } es: { multiplicacion }'
 
+def listarTerminos( **terminos ):
+    for llave, valor in terminos.items():
+        print( f'{ llave }: { valor }' )
+
+def despliegaNombres( nombres: list ):
+    for nombre in nombres:
+        print(f'{nombre}')
+
+def getFactorialNumero( numero ):
+    if numero == 1:
+        return 1
+    else:
+        return numero * getFactorialNumero( numero - 1 )
+    
+def getNumeroDescendiente( numero ):
+    if numero >= 1:
+        print( numero )
+        getNumeroDescendiente( numero - 1 )
