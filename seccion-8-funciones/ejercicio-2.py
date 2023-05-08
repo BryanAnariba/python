@@ -2,11 +2,11 @@
 
 def fACelsius( gradosFarenheit = 0 ):
     gradosCelsius: float = ( gradosFarenheit - 32 ) * ( 5/9 )
-    return gradosCelsius
+    return gradosCelsius.__round__(2)
 
 def cAFarenheit( gradosCelsius = 0 ):
     gradosFarenheit: float = ( gradosCelsius * ( 9/5 ) ) + 32
-    return gradosFarenheit
+    return gradosFarenheit.__round__(2)
 
 def main():
     print( "Que desea calcular? " )
@@ -26,7 +26,7 @@ def main():
         print( "Que desea calcular? " )
         print( "1. Grados Celsius a Farenheit " )
         print( "2. Grados Farenhheit a Celsius " )
-        opcion = int( input( "Digite una opcion" ) )
+        opcion = int( input( "Digite una opcion: " ) )
 
 main()
 
