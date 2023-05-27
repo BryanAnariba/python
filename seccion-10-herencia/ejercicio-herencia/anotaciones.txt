@@ -1,0 +1,26 @@
+Definir una clase padre llamada Vehiculo y dos clases hijas llamadas Coche y Bicicleta las cuales heredan de la clase Vehiculo
+
+- La clase padre( Vehiculo ) debe tener las siguientes
+    propiedades
+        color
+        ruedad
+    
+    metodos/comportamientos
+        __init__()
+        __str__()
+
+- La clase coche ademas de heredar de Vehiculo debe tener
+    propiedades
+        velocidad km/h 
+    
+    metodos
+        __init__()
+        __str__()
+
+- La clase Bicicleta ademas de heredar de Vehiculo debe tener
+    propiedades
+        tipo ( Urbano, Montana, Carretera, etc )
+
+    metodos
+        __init__()
+        __str__() 
