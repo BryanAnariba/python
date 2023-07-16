@@ -1,0 +1,9 @@
+A partir de aqui y si instalas paquetes de python debes crear entornos virtuales en las aplicaciones
+    Paso 1: Crearlo
+        python -m venv nombre-entorno-virtual
+
+    Paso 2: Activarlo debes verlo asi en la consola despues de activarlo(nombre-entorno-virtual)
+        nombre-entorno-virtual\Scripts\activate
+
+    DESPUES DE ELLO PUEDES INSTALAR PAQUETES
+        pip install pyodbc
