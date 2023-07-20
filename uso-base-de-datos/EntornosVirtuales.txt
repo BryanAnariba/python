@@ -7,3 +7,6 @@ A partir de aqui y si instalas paquetes de python debes crear entornos virtuales
 
     DESPUES DE ELLO PUEDES INSTALAR PAQUETES
         pip install pyodbc
+
+
+        DESKTOP-S2CFA8N\SQLEXPRESS

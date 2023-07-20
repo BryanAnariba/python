@@ -3,7 +3,8 @@ import pyodbc
 def actualizar():
     try:
         # Conectamos por ahorita quiero que sea a SQL SERVER ya que este lo uso en el trabajo pero probare con MongoDB Despues
-        conexion = pyodbc.connect('DRIVER={SQL Server};SERVER=ANARIBA\SQLEXPRESS;DATABASE=test_db;UID=bryansanchez;PWD=3500')
+        #conexion = pyodbc.connect('DRIVER={SQL Server};SERVER=ANARIBA\SQLEXPRESS;DATABASE=test_db;UID=bryansanchez;PWD=3500')
+        conexion = pyodbc.connect('DRIVER={SQL Server};SERVER=DESKTOP-S2CFA8N\SQLEXPRESS;DATABASE=test_db;UID=bryansanchez;PWD=3500')
         conexion.setdecoding(pyodbc.SQL_CHAR, encoding='utf-8')
         conexion.setdecoding(pyodbc.SQL_WCHAR, encoding='utf-8')
         cursor = conexion.cursor()
@@ -15,6 +16,7 @@ def actualizar():
         print(f'Registros Actualizados: { cursor.rowcount }')
 
     except Exception as ex:
+        conexion.rollback()
         print(f'Ha Ocurrido un error: { ex }')
     finally:
         conexion.close()
