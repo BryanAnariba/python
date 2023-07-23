@@ -1,0 +1,30 @@
+08:13:00 AM: DEBUG [logger_base.py: 12] Mensaeje a nivel de debug
+08:13:00 AM: INFO [logger_base.py: 13] Mensaje a nivel de info
+08:13:00 AM: WARNING [logger_base.py: 14] Mensaje a nivel de warning
+08:13:00 AM: ERROR [logger_base.py: 15] Mensaje a nivel de error
+08:13:00 AM: CRITICAL [logger_base.py: 16] Mensaje a nivel critico
+09:00:30 AM: DEBUG [logger_base.py: 12] Mensaeje a nivel de debug
+09:00:30 AM: INFO [logger_base.py: 13] Mensaje a nivel de info
+09:00:30 AM: WARNING [logger_base.py: 14] Mensaje a nivel de warning
+09:00:30 AM: ERROR [logger_base.py: 15] Mensaje a nivel de error
+09:00:30 AM: CRITICAL [logger_base.py: 16] Mensaje a nivel critico
+09:00:30 AM: DEBUG [app.py: 6] Persona id: 1, nombre: Bryan Ariel, apellido: Sanchez Anariba, email: saariel115@gmail.com
+09:02:02 AM: DEBUG [logger_base.py: 12] Mensaeje a nivel de debug
+09:02:02 AM: INFO [logger_base.py: 13] Mensaje a nivel de info
+09:02:02 AM: WARNING [logger_base.py: 14] Mensaje a nivel de warning
+09:02:02 AM: ERROR [logger_base.py: 15] Mensaje a nivel de error
+09:02:02 AM: CRITICAL [logger_base.py: 16] Mensaje a nivel critico
+09:02:02 AM: DEBUG [app.py: 6] Persona id: None, nombre: Bryan Ariel, apellido: Sanchez Anariba, email: saariel115@gmail.com
+09:03:22 AM: DEBUG [logger_base.py: 12] Mensaeje a nivel de debug
+09:03:22 AM: INFO [logger_base.py: 13] Mensaje a nivel de info
+09:03:22 AM: WARNING [logger_base.py: 14] Mensaje a nivel de warning
+09:03:22 AM: ERROR [logger_base.py: 15] Mensaje a nivel de error
+09:03:22 AM: CRITICAL [logger_base.py: 16] Mensaje a nivel critico
+09:03:22 AM: DEBUG [app.py: 6] Persona id: 1, nombre: Bryan Ariel, apellido: Sanchez Anariba, email: saariel115@gmail.com
+07:58:31 AM: ERROR [conexion.py: 24] Ha ocurrido una excepcion en la ejecucion de la conexion: argument 1 must be a string or unicode object
+08:00:29 AM: DEBUG [conexion.py: 21] Conexion exitosa: <pyodbc.Connection object at 0x000001B62881C100>
+08:00:31 AM: DEBUG [conexion.py: 21] Conexion exitosa: <pyodbc.Connection object at 0x00000194C31CC100>
+08:05:10 AM: DEBUG [conexion.py: 21] Conexion exitosa: <pyodbc.Connection object at 0x000001D894F7C100>
+08:05:10 AM: DEBUG [conexion.py: 34] Se abrio correctamentre el cursor: <pyodbc.Cursor object at 0x000001D894EEF8B0>
+10:02:33 AM: DEBUG [conexion.py: 21] Conexion exitosa: <pyodbc.Connection object at 0x000002593B5B82A0>
+10:02:33 AM: DEBUG [conexion.py: 34] Se abrio correctamentre el cursor: <pyodbc.Cursor object at 0x000002593D1F38B0>
