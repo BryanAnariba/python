@@ -1,0 +1,20 @@
+Metadata-Version: 2.1
+Name: mssql
+Version: 1.0.1
+Summary: python sqlalchemy MsSQL utility
+Home-page: https://github.com/JoseRoberts87/mssql
+Author: Jose Roberts
+Author-email: Jose.Roberts@intracitygeeks.org
+License: MIT
+Platform: UNKNOWN
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.6
+Requires-Python: >=3.6
+Description-Content-Type: text/markdown
+Requires-Dist: sqlalchemy
+Requires-Dist: pyodbc
+
+a useful library to facilitate interfacing with MsSql databases and enabling or simplifying functionality that otherwise does not exist or is difficult to compose
+
+

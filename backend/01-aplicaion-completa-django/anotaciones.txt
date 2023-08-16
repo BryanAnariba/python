@@ -1,0 +1,26 @@
+Siempre crear el entorno virtual y activar antes de instalar dependencias con PIP
+    python -m venv .venv
+    .\.venv\Scripts\activate
+
+Instalar Django si no lo tienes y demas librerias que necesites pillow para imagenes, mssql para sqlserver
+    pip install Django
+    pip install mssql
+    pip install pyllow
+
+Crear el proyecto con Django
+    django-admin startproject app
+
+Ejecutar servidor
+    cd app
+    python manage.py runserver
+
+Si no tienes el panel configurado
+    python manage.py createsuperuser
+
+IMPORTANTE: si tienes migraciones pendientes debes ejecutar la migracion y es asi:
+    python manage.py makemigrations
+    python manage.py migrate
+
+Al crear un nuevo modulo que asi lo llamo por angular iran en la carpeta core
+    cd app/core
+    python ../manage.py startapp erp
