@@ -33,7 +33,7 @@ class Category( models.Model ):
     desc = models.TextField()
 
     def __str__(self) -> str:
-        return f'{ self.categoryName }'
+        return f'{ self.name }'
     
     class Meta():
         verbose_name = 'Category'
@@ -50,7 +50,7 @@ class Product( models.Model ):
     name = models.CharField( max_length=80, null=False )
     
     def __str__(self) -> str:
-        return f'{ self.categoryName }'
+        return f'{ self.name }'
     
     class Meta():
         verbose_name = 'Product'
