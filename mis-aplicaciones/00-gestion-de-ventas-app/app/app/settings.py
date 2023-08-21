@@ -77,13 +77,37 @@ WSGI_APPLICATION = 'app.wsgi.application'
 # Database
 # https://docs.djangoproject.com/en/4.2/ref/settings/#databases
 
-DATABASES = {
+'''
+    En Mi Laptop
     "default": {
         "ENGINE": "mssql",
         "NAME": "gestion_ventas_db",
         "USER": "bryansanchez",
         "PASSWORD": "3500",
         "HOST": "DESKTOP-S2CFA8N\SQLEXPRESS",
+        "PORT": "1433",
+        "OPTIONS": { "driver": "ODBC Driver 17 for SQL Server", },
+    }
+
+    En Mi PC De Escritorio
+    "default": {
+        "ENGINE": "mssql",
+        "NAME": "gestion_ventas_db",
+        "USER": "bryansanchez",
+        "PASSWORD": "3500",
+        "HOST": "ANARIBA\SQLEXPRESS",
+        "PORT": "1433",
+        "OPTIONS": { "driver": "ODBC Driver 17 for SQL Server", },
+    }
+'''
+
+DATABASES = {
+    "default": {
+        "ENGINE": "mssql",
+        "NAME": "gestion_ventas_db",
+        "USER": "bryansanchez",
+        "PASSWORD": "3500",
+        "HOST": "ANARIBA\SQLEXPRESS",
         "PORT": "1433",
         "OPTIONS": { "driver": "ODBC Driver 17 for SQL Server", },
     }

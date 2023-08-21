@@ -1,8 +1,6 @@
 from django.urls import path
-from erp.views import primeraVista, segundaVista, terceraVista
+from erp.views.category.views import category_list, CategoryListView
 
 urlpatterns = [
-    path('vista-uno', primeraVista),
-    path('vista-dos', segundaVista),
-    path('vista-tres', terceraVista)
+    path('categories/list/', CategoryListView.as_view())
 ]

@@ -1,0 +1,32 @@
+{% extends 'partials/table-component.html' %}
+
+
+{% block theadcontent %}
+    <tr class="font-weight-bold">
+        <td># Codigo</td>
+        <td>Nombre</td>
+        <td>Descripcion</td>
+        <td>Opciones</td>
+    </tr>
+{% endblock %}
+
+{% block tbodycontent %}
+    {% for category in object_list %}
+        <tr>
+            <td>{{ category.id }}</td>
+            <td>{{ category.category_name }}</td>
+            <td>{{ category.category_desc }}</td>
+            <td>
+                <button class="btn btn-outline-warning btn-sm"><i class="fas fa-edit"></i></button>
+                <button class="btn btn-outline-danger btn-sm"><i class="fas fa-trash-alt"></i></button>
+            </td>
+        </tr>
+    {% endfor %}
+{% endblock %}
+
+{% block cardfootercontent %}
+    <button class="btn btn-primary btn-flat">
+        <i class="fas fa-plus"></i>
+        Nueva Categoria
+    </button>
+{% endblock %}
