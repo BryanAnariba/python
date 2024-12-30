@@ -1,4 +1,0 @@
-Prefiero usarlo como backend pero si necesito usar el template ni modo tendre que estudiarlo pero las bases las tendre:
-	Siempre creemos un entorno virtual
-        python -m venv .venv
-        .\.venv\Scripts\activate
